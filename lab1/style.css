@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+li {
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#letters div {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  background-color: lightblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
