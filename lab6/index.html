@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>CSS border-radius generator</h2>
+
+<div class="tabs">
+    <button onclick="openTab(0)">Border-radius</button>
+    <button onclick="openTab(1)">CSS-код</button>
+</div>
+
+<div class="tabContent">
+    <div id="box"></div>
+
+    <p>Верхній лівий</p>
+    <input type="range" min="0" max="100" id="tl" oninput="generate()">
+
+    <p>Верхній правий</p>
+    <input type="range" min="0" max="100" id="tr" oninput="generate()">
+
+    <p>Нижній правий</p>
+    <input type="range" min="0" max="100" id="br" oninput="generate()">
+
+    <p>Нижній лівий</p>
+    <input type="range" min="0" max="100" id="bl" oninput="generate()">
+</div>
+
+<div class="tabContent">
+    <h3>Згенерований CSS-код:</h3>
+    <textarea id="cssCode" rows="4" cols="40"></textarea>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body {
+    font-family: Arial;
+}
+
+.tabs button {
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.tabContent {
+    display: none;
+    margin-top: 20px;
+}
+
+.tabContent.active {
+    display: block;
+}
+
+#box {
+    width: 150px;
+    height: 150px;
+    background: green;
+    margin-bottom: 20px;
+}
