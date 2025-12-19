@@ -38,13 +38,15 @@ function displayError(error){
         2: "Position is not available",
         3: "Request times out"
     };
-    const errorMessage = errorTypes[error.code];
-    if (error.code == 0 || error.code == 2){
-        errorMessage = errorMessage + " " + error.message;
+
+    let errorMessage = errorTypes[error.code];
+    if (error.code === 0 || error.code === 2){
+        errorMessage += " " + error.message;
     }
-    let div = document.getElementById("location");
-    div.innerHTML = errorMessage;
+
+    document.getElementById("location").innerHTML = errorMessage;
 }
+
 
 function computeDistance(startCoords, destCoords){
 let startLatRads = degreesToRadians (startCoords.latitude); 
